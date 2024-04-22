@@ -5,34 +5,73 @@
     <meta charset="utf-8">
     <title>hw12</title>
     <style>
-        h1{
+        h1 {
             text-shadow: 0px 0px 2px blue;
             text-decoration: wavy underline;
             text-transform: uppercase;
         }
-        .center{
+
+        .center {
             text-align: center;
+        }
+
+        .tBox {
+            border: solid 1px red;
+            width: 200px;
+            white-space: nowrap;
+            overflow: clip;
+        }
+
+        #t1 {
+            text-overflow: clip;
+        }
+
+        #t2 {
+            text-overflow: ellipsis;
+        }
+
+        .par {
+            border: solid 1px blueviolet;
+            width: 400px;
+            overflow: clip;
+        }
+
+        footer {
+            border: solid 1px;
+            width: 150px;
+            white-space: nowrap;
+        }
+
+        #f2 {
+            white-space: normal;
         }
     </style>
 </head>
 
 <body>
-    <h1>"Glowing Bonds"</h1>
-    <h1>"Glowing Bonds"</h1>
+    <h1 class="tBox" id="t1">"Glowing Bonds"</h1>
+    <h1 class="tBox" id="t2">"Glowing Bonds"</h1>
     <h1 class="center">"Glowing Bonds"</h1>
-    <p>
+    <p class="par" id="p1">
         In a forgotten forest, a lone firefly danced, its glow a beacon of hope. Lost travelers stumbled upon its gentle
         light,
         finding solace in its warmth. They shared tales of their journeys, forging bonds under the canopy's embrace. And
         so,
         amidst darkness, friendship blossomed, kindled by the flicker of a firefly.
     </p>
-    <p>
+    <p class="par" id="p2">
         In a forgotten forest, a lone firefly danced, its glow a beacon of hope. Lost travelers stumbled upon its gentle
         light,
         finding solace in its warmth. They shared tales of their journeys, forging bonds under the canopy's embrace. And
         so,
         amidst darkness, friendship blossomed, kindled by the flicker of a firefly.
+    </p>
+    <hr>
+    <p class="footer" id="f1">
+        (https://www.chatgpt.com)
+    </p>
+    <p class="footer" id="f2">
+        (https://www.chatgpt.com)
     </p>
 </body>
 
