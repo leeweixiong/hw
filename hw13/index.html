@@ -4,8 +4,16 @@
         <meta charset="utf-8">
         <title>hw13</title>
         <style>
+            .list01{
+                list-style:outside square;
+            }
+
+            .list02{
+                list-style: inside decimal-leading-zero;
+            }
+
             .img{
-                list-style-image: url(icon.png);
+                list-style-image:inside url(icon.png);
             }
         </style>
     </head>
@@ -13,7 +21,7 @@
     <body>
         <header><h1>制作项目清单</h1></header>
         <h2>项目符号清单</h2>
-        <ul>
+        <ul class="list01">
             <li>List 01</li>
             <li>List 02</li>
             <li>List 03</li>
@@ -21,7 +29,7 @@
         <hr>
 
         <h2>有编号的项目清单</h2>
-        <ol>
+        <ol class="list02">
             <li>List 01</li>
             <li>List 02</li>
             <li>List 03</li>
