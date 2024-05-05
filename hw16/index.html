@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8">
-        <title>hw14</title>
+        <title>hw16</title>
         <style>
-            table{
-                border: ;
+            caption {
+                caption-side: bottom;
+                margin-top: 10px;
+                color: blueviolet;
+            }
+
+            table {
+                width: 450px;
+                text-align: center;
+                border: solid 5px red;
+                font-weight: 700;
+                border-collapse: collapse;
+                background-color: aquamarine;
+            }
+            
+            tbody {
+                color: green;
+            }
+
+            th, td {
+                width: 150px;
+                border: solid 2px blue;
+                
+            }
+
+            tr:nth-child(2) {
+                background-color: brown;
+            }
+
+            td:nth-child(2) {
+                color: chocolate;
             }
         </style>
     </head>
@@ -16,9 +45,15 @@
                 <tr><th>Outlet</th><th>Address</th><th>Business Hour</th></tr>
             </thead>
             <tbody>
-                <tr><td>Shop 01</td><td>Address01</td><td>1000-1800</td></tr>
-                <tr><td>Shop 02</td><td>Address02</td><td>1000-1800</td></tr>
-                <tr><td>Shop 03</td><td>Address03</td><td>1000-1800</td></tr>
+                <tr>
+                    <td>Shop01</td><td>Address01</td><td>1000-1800</td>
+                </tr>
+                <tr>
+                    <td>Shop02</td><td>Address02</td><td>1000-1800</td>
+                </tr>
+                <tr>
+                    <td>Shop03</td><td>Address03</td><td>1000-1800</td>
+                </tr>
             </tbody>
         </table>
     </body>
