@@ -52,14 +52,6 @@
 
     var dur = 200;
 
-    var ok = confirm("Are you using mobile ?")
-
-    if(ok != true){
-
-        dur = 100;
-
-    }
-
     var posX = 50;
 
     var posY = cnv.height -50;
@@ -244,7 +236,7 @@ setInterval(scores,100)
 
     for(i=0;i<1;i++){
 
-        enemies.push(new enemy(random()*cnv.width,0,"red",3))
+        enemies.push(new enemy(random()*cnv.width,0,"red",300))
 
     }
 
