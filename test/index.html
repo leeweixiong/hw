@@ -38,54 +38,6 @@
 
         <script>
 
-            window.onload = () => {
-
-    const cnv = document.getElementById("canvas");
-
-    const ctx = cnv.getContext("2d");
-
-    cnv.height = window.innerHeight;
-
-    cnv.width = window.innerWidth;
-
-    let enemies = [];
-
-    var dur = 200;
-
-    var ok = confirm("Are you using mobile ?")
-
-    if(ok != true){
-
-        dur = 100;
-
-    }
-
-    alert(`Instructions to play :-
-
-1. Don't collide with meteor's head 
-
-2. Move your finger or mouse to control red circle's position 
-
-3 Your task is to prevent red circle from colliding with meteors`)
-
-    var posX = 50;
-
-    var posY = cnv.height -50;
-
-    let alive = true;
-
-    let score = 0;
-
-    document.getElementById("player").style.bottom = posY;
-
-    document.getElementById("player").style.left = posX;
-
-    let b = document.getElementById("b");
-
-    document.getElementById("btn").addEventListener("click",restart)
-
-    
-
     function restart(){
 
         cnv.style.display = "block";
@@ -319,12 +271,7 @@ cnv.width = innerWidth;
 cnv.height = innerHeight;
 
 });
-
-}
-
-
-
-        
+     
 
         </script>
 
