@@ -5,6 +5,14 @@ var cols = 20;
 var board;
 var context; 
 
+var score = 0;
+
+function increaseScore() {
+    score += 10;
+    document.getElementById("scoreBoard").innerHTML = "Score: " + score;
+}
+
+
 //snake head
 var snakeX = blockSize * 5;
 var snakeY = blockSize * 5;
